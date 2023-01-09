@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Copperplate", "FANTASY";
+}
+body {
+  background-image:url(background.jpg);
+  
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.start-screen,
+.score-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#start-button,
+#restart{
+  background-color: #A09EBC;
+  font-size: 1.3em;
+  padding: 0.5em 1.8em;
+  border-radius: 0.2em;
+}
+#restart {
+  margin-top: 3em;
+}
+
+#display-container {
+  background-color: #a9a6ca;
+  padding: 3.1em 1.8em;
+  width: 80%;
+  max-width: 37.5em;
+  margin: 0 auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 0.6em;
+}
+.header {
+  margin-bottom: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6em;
+  border-bottom: 0.1em solid #7d7a9a;
+}
+.timer-div {
+  background-color: #747496;
+  width: 7.5em;
+  border-radius: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 1.8em;
+}
+.question {
+  margin-bottom: 1.25em;
+  font-weight: 600;
+}
+.option-div {
+  font-size: 1em;
+  width: 100%;
+  padding: 1em;
+  margin: 0.3em 0;
+  text-align: left;
+  outline: none;
+  background: transparent;
+  border: 1px solid #0a3a57;
+  border-radius: 0.3em;
+}
+.option-div:disabled {
+  color: #0a3a57;
+  cursor: not-allowed;
+}
+#next-button {
+  font-size: 1em;
+  margin-top: 1.5em;
+  background-color: #5d5b90;
+  color: #3c3753;
+  padding: 0.7em 1.8em;
+  border-radius: 0.3em;
+  float: right;
+}
+.hide {
+  display: none;
+}
+.incorrect {
+  background-color: #e0afb3;
+  color: #e4b2b2;
+  border-color: #881e1e;
+}
+.correct {
+  background-color: #7c8670;
+  color: #829472;
+  border-color: #2e4818;
+}
+.highlight {
+  background-image: linear-gradient(to right, #5d5b90, #5d5b90, #5d5b90);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#user-score {
+  color: #25243e ;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+
+
